@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<meta charset = "UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<Title>Text Adventure Game</title>
+	
+	
+<script>
+	function backInfo()
+	{
+	
+		document.getElementById("info").innerHTML = "<br>Let's take it back to Chritmas Eve, December 24, 1945.<br>The night air is stale, the temperature is below freezing and a thick black smoke begins to rise from the Sodder Family Home.<br>Play as Mr. and Mrs. George Sodder and find your kids! <hr>";
+	}
+	function pageOne()
+	{
+
+		window.location.href = "Georgeway.html";
+	}
+	function pageUno()
+	{
+		window.location.href = "Jennieway.html"
+	}
+</script>
+<style>
+body{
+background: linear-gradient(to bottom, #ffffff 0%, #ffcc66 100%);
+ font-family: Garamond, serif;
+  font-size: 16px;  
+}
+
+h1 , h2 {
+color:white;
+font-size: 46px;
+font-family: Helvetica. sans-serif;
+text-align: center;
+}
+h2{
+font-size:36px;
+}
+.header {
+background-color: gray;
+border-bottom: 2px solid black;
+
+}
+.button{
+text-transform: uppercase;
+text-align: center;
+}
+h4{
+text-align: center;
+}
+.im1{
+border: 2px;
+}
+.im2{
+text-align:right;
+border: 2px;
+}
+</style>
+</head>
+
+
+<body>
+<div class="header">
+      <h1>Where are the Sodder Children?</h1>
+	  <h2>Discover the truth behind the tragic house fire at the Sodder Family Home.</h2>
+	  <hr><br>
+	  </div>
+	  <div class= "button">
+	  <input type = "button" value = "about" onclick = "backInfo()">
+	 </div>
+	 <p id = "info">
+	  <h4>Are you Mr. George Sodder or Mrs. Jennie Sodder?</h4>
+	  <p id = "pic">
+<div class = "im1">
+	 <img src  = "soddergeorge.jpg" width = "375px" height = "508px" onclick = "pageOne()">
+	 </div>
+	 <div class = "im2">
+ <img src = "jenjen.jpg" width = "250px" height = "320px" onclick = "pageUno()">
+ </div>
+	 
+</body>
+</html>
